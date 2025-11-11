@@ -1,0 +1,164 @@
+a. What Happens When You Enter “google.com” in a Browser
+
+When you type google.com into your browser and press Enter, a series of steps occur behind the scenes to load the webpage.
+
+1. DNS Resolution (Domain Name System)
+
+The browser needs to find the IP address of google.com to connect to it.
+
+Process:
+
+The browser checks its cache for the IP.
+
+If not found, it asks the local DNS resolver (usually your ISP).
+
+The resolver queries the Root Nameserver → points to .com TLD server.
+
+The .com server points to Google’s authoritative nameserver.
+
+The nameserver returns the IP address (e.g., 142.250.190.78).
+
+📍 Result: google.com → 142.250.190.78
+
+2. Browser Establishes a TCP Connection
+
+Once the IP is known, the browser uses the TCP (Transmission Control Protocol) to connect to the web server.
+
+The connection is created using the 3-way handshake:
+
+SYN: Browser sends a request to start communication.
+
+SYN-ACK: Server acknowledges the request.
+
+ACK: Browser confirms the connection.
+
+3. HTTPS and TLS Handshake
+
+Since Google uses HTTPS, a TLS (Transport Layer Security) handshake happens.
+
+This ensures the connection is secure and encrypted.
+
+Steps include:
+
+Browser and server exchange security certificates.
+
+Encryption keys are established for safe data transfer.
+
+4. Sending the HTTP Request
+
+After the secure connection is established, the browser sends an HTTP GET request for the webpage:
+
+GET / HTTP/1.1
+Host: google.com
+
+
+The server then processes this request.
+
+5. Server Response
+
+Google’s server sends back an HTTP response with:
+
+Status Code: 200 OK (if successful)
+
+Content: HTML, CSS, JS files for the homepage.
+
+6. Rendering the Webpage
+
+The browser:
+
+Parses the HTML.
+
+Downloads CSS, images, and JavaScript.
+
+Builds the DOM (Document Object Model).
+
+Displays the final webpage to the user.
+
+7. Browser Caching
+
+The browser stores files locally to load faster next time.
+
+Caches DNS data, images, and scripts.
+
+✅ Summary of Steps
+
+DNS lookup → find IP address
+
+TCP connection → establish link
+
+TLS handshake → encrypt data
+
+HTTP request → ask for webpage
+
+Server response → send files
+
+Browser renders → display page
+
+Cache → save for future use
+
+b. How Search Engines Work
+
+A search engine (like Google or Bing) helps users find information on the web using automated processes.
+
+1. Crawling
+
+Search engines use web crawlers (bots/spiders) to browse the web automatically.
+
+They follow links from one page to another and collect data.
+
+Example crawler: Googlebot
+
+🕷️ Goal: Discover new or updated webpages.
+
+2. Indexing
+
+The collected data is processed and stored in a massive database called the index.
+
+The index contains:
+
+Page titles
+
+Keywords
+
+Links
+
+Content summary
+
+Metadata
+
+📘 Goal: Understand what each page is about.
+
+3. Ranking
+
+When you search, the search engine checks the index and ranks results using algorithms.
+
+Ranking factors include:
+
+Relevance (how closely it matches your search)
+
+Quality (original and useful content)
+
+Page speed
+
+Mobile-friendliness
+
+Backlinks (links from other sites)
+
+📈 Goal: Show the most useful and trustworthy results first.
+
+4. Displaying Results
+
+The Search Engine Results Page (SERP) shows:
+
+Organic results (non-paid)
+
+Sponsored ads
+
+Snippets, images, videos, maps, etc.
+
+| Step | Name     | Function                 |
+| ---- | -------- | ------------------------ |
+| 1    | Crawling | Discover web pages       |
+| 2    | Indexing | Store and organize data  |
+| 3    | Ranking  | Order pages by relevance |
+| 4    | Results  | Display best matches     |
