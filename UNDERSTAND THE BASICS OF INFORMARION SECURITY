@@ -1,0 +1,99 @@
+a. CIA Triad
+
+The CIA Triad is the foundation of information security. It represents three core principles:
+
+Confidentiality
+
+Ensures that information is accessible only to authorized users.
+
+Prevents unauthorized access or disclosure.
+
+Examples:
+
+Using passwords, encryption, and access control lists.
+
+Integrity
+
+Ensures that data is accurate, consistent, and unaltered.
+
+Protects information from being modified or destroyed by unauthorized users.
+
+Examples:
+
+Hashing, checksums, and digital signatures.
+
+Availability
+
+Ensures that data and systems are available to authorized users when needed.
+
+Protects against service interruptions and downtime.
+
+Examples:
+
+Backups, redundancy, disaster recovery, and DDoS protection.
+
+b. Key Security Concepts
+
+Threat
+
+Any potential cause of an unwanted incident that may harm a system or organization.
+
+Example: Malware, phishing attack, insider threat.
+
+Weakness
+
+A flaw or defect in a system that can make it more vulnerable to attack.
+
+Example: Weak passwords, unpatched software.
+
+Vulnerability
+
+A specific weakness in a system that can be exploited by a threat actor.
+
+Example: SQL Injection flaw in a website.
+
+Exploit
+
+A piece of code or technique that takes advantage of a vulnerability.
+
+Example: Malware that uses an OS vulnerability to gain admin access.
+
+Payload
+
+The part of the exploit that performs the malicious action once the vulnerability is exploited.
+
+Example: A ransomware payload that encrypts files after gaining access.
+
+c. CVE and CWE
+
+CVE – Common Vulnerabilities and Exposures
+
+A public database of known cybersecurity vulnerabilities.
+
+Each CVE entry has a unique ID (e.g., CVE-2024-12345).
+
+Maintained by MITRE Corporation.
+
+Purpose: Helps security professionals identify and track specific vulnerabilities.
+
+Example:
+
+CVE-2017-0144 – The EternalBlue exploit used in the WannaCry ransomware attack.
+
+CWE – Common Weakness Enumeration
+
+A catalog of software weakness types that can lead to vulnerabilities.
+
+Focuses on the root causes of security issues.
+
+Example:
+
+CWE-79 – Improper Neutralization of Input (Cross-Site Scripting).
+
+CWE-89 – SQL Injection.
+| **Aspect** | **CVE**                       | **CWE**                                     |
+| ---------- | ----------------------------- | ------------------------------------------- |
+| Focus      | Specific vulnerability        | General type of weakness                    |
+| Example    | CVE-2021-44228 (Log4Shell)    | CWE-502 (Deserialization of Untrusted Data) |
+| Managed By | MITRE                         | MITRE                                       |
+| Use        | Identify known security flaws | Identify coding or design weaknesses        |
