@@ -1,0 +1,141 @@
+a. VPNs, Proxies, and Tor
+1. VPN (Virtual Private Network)
+
+A VPN encrypts your internet connection and routes it through a secure server.
+
+It hides your IP address and protects data from hackers or surveillance.
+
+Main Features:
+
+Encrypts all traffic between your device and the VPN server.
+
+Masks your real location.
+
+Useful on public Wi-Fi for security.
+
+Advantages:
+
+Strong encryption.
+
+Works for all apps on your device.
+
+Bypasses geo-restrictions (e.g., Netflix, websites).
+
+Disadvantages:
+
+May reduce internet speed.
+
+Requires trust in the VPN provider.
+
+2. Proxy Server
+
+A proxy acts as an intermediary between your device and the internet.
+
+It changes your IP address but does not encrypt your traffic (unlike VPN).
+
+Main Features:
+
+Hides your IP for basic anonymity.
+
+Often used to bypass website restrictions or filters.
+
+Advantages:
+
+Good for browsing or accessing blocked sites.
+
+Lightweight and easy to set up.
+
+Disadvantages:
+
+No encryption → traffic can be monitored.
+
+Only works for specific applications or browsers.
+
+3. Tor (The Onion Router)
+
+Tor is a network that routes traffic through multiple volunteer-operated servers (nodes) to anonymize users.
+
+Each relay adds a layer of encryption — like an onion.
+
+Main Features:
+
+Provides strong anonymity.
+
+Access to .onion websites on the dark web.
+
+Advantages:
+
+High privacy and anonymity.
+
+Free and open-source.
+
+Disadvantages:
+
+Slow connection due to multiple relays.
+
+Some websites block Tor users.
+
+Misuse for illegal activities by some users.
+
+Comparison Table
+Feature	VPN	Proxy	Tor
+Encryption	✅ Yes	❌ No	✅ Multi-layer
+Anonymity	Medium	Low	Very High
+Speed	Fast	Fast	Slow
+Cost	Usually Paid	Often Free	Free
+Use Case	Privacy & streaming	Bypassing restrictions	Deep anonymity
+b. Web Layers: Surface Web, Deep Web, and Dark Web
+1. Surface Web
+
+The part of the internet that is indexed by search engines (Google, Bing, etc.).
+
+Accessible to everyone using normal browsers.
+
+Examples: Wikipedia, YouTube, News websites.
+
+Est. size: Less than 5% of the total web.
+
+2. Deep Web
+
+Portion of the web not indexed by search engines.
+
+Requires login credentials or special permissions.
+
+Used for private or internal data.
+
+Examples:
+
+Online banking portals
+
+Email inboxes
+
+Cloud storage
+
+Academic or government databases
+
+Purpose: Legitimate and secure — not illegal.
+
+3. Dark Web
+
+A subset of the Deep Web that requires special software (like Tor) to access.
+
+Sites often use the “.onion” domain.
+
+Offers anonymity for both users and site owners.
+
+Examples:
+
+Anonymous forums
+
+Whistleblower platforms (like SecureDrop)
+
+Black markets (illegal activity)
+
+Caution: Contains both legal and illegal content.
+
+| Layer           | Accessible via               | Indexed by Search Engines | Example Sites     | Purpose                          |
+| --------------- | ---------------------------- | ------------------------- | ----------------- | -------------------------------- |
+| **Surface Web** | Normal browsers              | ✅ Yes                     | Google, Wikipedia | Public info                      |
+| **Deep Web**    | Normal browsers (with login) | ❌ No                      | Gmail, Banking    | Private info                     |
+| **Dark Web**    | Tor Browser                  | ❌ No                      | .onion sites      | Anonymous & hidden communication |
+
